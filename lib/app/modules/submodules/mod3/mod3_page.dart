@@ -43,11 +43,6 @@ class _Mod3PageState extends State<Mod3Page> {
                 ],
               ),
             ),
-            Container(width: 150, height: 150, color: Colors.black12),
-            Text(
-              'Página 3',
-              style: TextStyle(fontSize: 32),
-            ),
           ],
         ),
       ),

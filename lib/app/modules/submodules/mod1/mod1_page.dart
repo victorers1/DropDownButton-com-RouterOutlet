@@ -43,11 +43,6 @@ class _Mod1PageState extends ModularState<Mod1Page, Mod1Controller> {
                 ],
               ),
             ),
-            Container(width: 150, height: 150, color: Colors.black12),
-            Text(
-              'Módulo 1',
-              style: TextStyle(fontSize: 32),
-            ),
           ],
         ),
       ),

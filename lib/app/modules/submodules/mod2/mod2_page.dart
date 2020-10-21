@@ -17,7 +17,12 @@ class _Mod2PageState extends ModularState<Mod2Page, Mod2Controller> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[Text('Módulo 2', style: TextStyle(fontSize: 32))],
+          children: <Widget>[
+            Text(
+              'Módulo 2',
+              style: TextStyle(fontSize: 32),
+            ),
+          ],
         ),
       ),
     );
