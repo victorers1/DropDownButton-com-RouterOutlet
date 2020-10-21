@@ -8,10 +8,8 @@ class Mod1Controller = _Mod1ControllerBase with _$Mod1Controller;
 
 abstract class _Mod1ControllerBase with Store {
   @observable
-  int value = 0;
+  String matricula = '2020';
 
   @action
-  void increment() {
-    value++;
-  }
+  void increment() {}
 }

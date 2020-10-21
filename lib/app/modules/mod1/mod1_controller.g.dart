@@ -19,18 +19,18 @@ final $Mod1Controller = BindInject(
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$Mod1Controller on _Mod1ControllerBase, Store {
-  final _$valueAtom = Atom(name: '_Mod1ControllerBase.value');
+  final _$matriculaAtom = Atom(name: '_Mod1ControllerBase.matricula');
 
   @override
-  int get value {
-    _$valueAtom.reportRead();
-    return super.value;
+  String get matricula {
+    _$matriculaAtom.reportRead();
+    return super.matricula;
   }
 
   @override
-  set value(int value) {
-    _$valueAtom.reportWrite(value, super.value, () {
-      super.value = value;
+  set matricula(String value) {
+    _$matriculaAtom.reportWrite(value, super.matricula, () {
+      super.matricula = value;
     });
   }
 
@@ -51,7 +51,7 @@ mixin _$Mod1Controller on _Mod1ControllerBase, Store {
   @override
   String toString() {
     return '''
-value: ${value}
+matricula: ${matricula}
     ''';
   }
 }

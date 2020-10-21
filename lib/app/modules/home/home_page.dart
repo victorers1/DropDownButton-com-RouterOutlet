@@ -16,12 +16,12 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('Home')),
       body: PageView(
         controller: controller.pageViewController,
         children: [
           RouterOutlet(module: Mod1Module()),
           RouterOutlet(module: Mod2Module()),
-          Container(color: Colors.blue),
         ],
       ),
       bottomNavigationBar: AnimatedBuilder(

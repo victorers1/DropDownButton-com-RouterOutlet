@@ -14,11 +14,12 @@ class _Mod2PageState extends ModularState<Mod2Page, Mod2Controller> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Column(
-        children: <Widget>[],
+      // appBar: AppBar(title: Text(widget.title)),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[Text('Módulo 2', style: TextStyle(fontSize: 32))],
+        ),
       ),
     );
   }
