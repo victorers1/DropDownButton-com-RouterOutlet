@@ -9,7 +9,7 @@ class Mod3Page extends StatefulWidget {
 }
 
 class _Mod3PageState extends State<Mod3Page> {
-  String matricula = '2020';
+  String value = 'Opção1';
 
   @override
   Widget build(BuildContext context) {
@@ -23,21 +23,20 @@ class _Mod3PageState extends State<Mod3Page> {
               child: Column(
                 children: [
                   DropdownButton<String>(
-                    value: matricula,
-                    hint: Text('Matrícula'),
+                    value: value,
                     items: [
                       DropdownMenuItem(
-                        child: Text('2020'),
-                        value: '2020',
+                        child: Text('Opção1'),
+                        value: 'Opção1',
                       ),
                       DropdownMenuItem(
-                        child: Text('2019'),
-                        value: '2019',
+                        child: Text('Opção2'),
+                        value: 'Opção2',
                       ),
                     ],
                     onChanged: (m) {
                       setState(() {
-                        matricula = m;
+                        value = m;
                       });
                     },
                   )

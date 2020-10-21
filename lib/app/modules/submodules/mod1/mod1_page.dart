@@ -14,7 +14,6 @@ class _Mod1PageState extends ModularState<Mod1Page, Mod1Controller> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(title: Text(widget.title)),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -24,21 +23,20 @@ class _Mod1PageState extends ModularState<Mod1Page, Mod1Controller> {
               child: Column(
                 children: [
                   DropdownButton<String>(
-                    value: controller.matricula,
-                    hint: Text('Matrícula'),
+                    value: controller.value,
                     items: [
                       DropdownMenuItem(
-                        child: Text('2020'),
-                        value: '2020',
+                        child: Text('Opção1'),
+                        value: 'Opção1',
                       ),
                       DropdownMenuItem(
-                        child: Text('2019'),
-                        value: '2019',
+                        child: Text('Opção2'),
+                        value: 'Opção2',
                       ),
                     ],
                     onChanged: (m) {
                       setState(() {
-                        controller.matricula = m;
+                        controller.value = m;
                       });
                     },
                   )
